@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Asu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="question-container">
+        <p id="question">Apakah anda wanita?</p>
+        <div class="buttons">
+            <button onclick="nextQuestion('IYA')">IYA</button>
+            <button onclick="nextQuestion('iya')">iya</button>
+        </div>
+    </div>
+
+    <!-- GIF Perayaan -->
+    <div class="celebration" id="celebration" style="display: none;">
+        <img src="https://media.giphy.com/media/3o7abAHdYvZdBNnGZq/giphy.gif" alt="Celebration 1">
+        <img src="https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif" alt="Celebration 2">
+        <img src="https://media.giphy.com/media/3o7TKsQ8gqVrXWQkO4/giphy.gif" alt="Celebration 3">
+        <img src="https://media.giphy.com/media/3o7TKsQ8gqVrXWQkO4/giphy.gif" alt="Celebration 4">
+        <img src="https://media.giphy.com/media/3o7TKsQ8gqVrXWQkO4/giphy.gif" alt="Celebration 5">
+    </div>
+
+    <!-- Final Message -->
+    <div class="container final-message-container" id="final-message-container" style="display: none;">
+        <h2 class="final-message">Yay! Sekarang kamu pacarku ❤️</h2>
+        <button onclick="lanjutKeRamalan()">Lanjut</button>
+    </div>
+    <audio id="soundEffect" src="sounds/soundasu.mp3"></audio>
+
+    <!-- Halaman Ramalan -->
+    <div class="container ramalan-container" id="ramalan-container">
+        <h2>Menurut ramalan mbah-mbah yang gabisa turun dari gunung, persentase kita:</h2>
+        <div class="chart">
+            <div class="chart-text">99.8% Jodoh<br>0.2% Jodoh Gile</div>
+        </div>
+        <button onclick="kembaliKeAwal()">Lanjut Lagi</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
